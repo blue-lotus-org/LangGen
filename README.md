@@ -127,3 +127,47 @@ This project is licensed under the MIT License.
 
 For questions, support, or further information, please contact our team.
 
+---
+
+## Topology
+```
+█████████████████████
+█  User Request     █
+█████████████████████
+          █
+          ▼
+██████████████████████
+█   Manager Agent    █
+█(Subtask Generation)█
+██████████████████████
+          █
+          ▼
+████████████████████████████████████████
+█ Distribute Subtasks to Worker Agents █
+████████████████████████████████████████
+          █
+  ███████████████████   ██████████████████████
+  █Worker Agent 1   █   █   Worker Agent N   █
+  █(Process Subtask)█   █   (Process Subtask)█
+  ███████████████████   ██████████████████████
+          █                   █
+          ▼                   ▼
+  ███████████████   ███████████████
+  █   Answer 1  █   █ Answer N    █
+  ███████████████   ███████████████
+          █
+███████████████████████████████████████
+█ Collect Answers from Worker Agents  █
+███████████████████████████████████████
+          █
+          ▼
+█████████████████████
+█   Compile Answers █
+█████████████████████
+          █
+          ▼
+█████████████████████████████
+█     TS Standard Agent     █
+█       (Output Result)     █
+█████████████████████████████
+```
