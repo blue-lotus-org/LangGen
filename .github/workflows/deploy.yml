@@ -24,6 +24,11 @@ jobs:
     - name: Build project
       run: npm run build
 
+    - name: Debug Environment
+      run: echo "PAT is set"
+      env:
+        PAT: ${{ secrets.PAT }}
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
