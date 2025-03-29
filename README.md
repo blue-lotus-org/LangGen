@@ -1,3 +1,7 @@
+<div align="right">
+<sub>Public | Free OpenSource</sub>
+</div>
+
 #   Bluelotus LangChain Agent Generator (LangGen)
 
 ##   Presentation
